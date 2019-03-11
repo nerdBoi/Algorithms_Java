@@ -1,5 +1,5 @@
 package Algorithms;
-import java.util.*;
+
 public class Trees {
 	//used in ISVALIDBST, need to refactor code to remove it
 	Integer previousNodeVal = null;
@@ -31,19 +31,8 @@ public class Trees {
 		}
 		return res;
 	}
-    //  Given a binary tree, find the leftmost value in the last row of the tree.
-	public int findBottomLeftValue(Tree_Node root) {
-        Queue<Tree_Node> queue = new LinkedList<>();
-         queue.add(root);
-         while (!queue.isEmpty()) {
-             root = queue.poll();
-        if (root.right != null)
-            queue.add(root.right);
-        if (root.left != null)
-            queue.add(root.left);
-    }
-    return root.val;
-    }
+	///END OF ISVALIDBST
+	
 	
 	
 	
